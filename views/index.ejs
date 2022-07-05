@@ -1,0 +1,36 @@
+
+<div class="wrapper">
+    <div class="header">
+      <div class="title">
+        BOOKS
+      </div>
+  
+      <div class="search_box">
+        <input type="text" id="search_input" placeholder="Fliter Table Using any value" oninput="search()">
+      </div>
+    </div>
+<br>
+<br>
+
+<div id="table_container">
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>ISBN</th>
+            <th>Authors</th>
+            <th>Description/Published At</th>
+        </tr>
+    <% for (let i =0; i <books.length;i++ ) { %>
+        <%let table_data=books[i].split(';')%>
+        <tr>
+            <td><%=table_data[0]%></td>
+            <td><%=table_data[1]%></td>
+            <td><%=table_data[2]%></td>
+            <td><%=table_data[3]%></td>
+        </tr>
+        <% } %>
+    </table>
+</div>
+
+<link rel="stylesheet" href="/css/index.css">
+<script src="/js/index.js"></script>
