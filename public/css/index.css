@@ -5,6 +5,7 @@ body{
     background-color:#eee;
     font-family: "Poppins", sans-serif;
     height: 100%;
+
    }
    @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
 
@@ -71,7 +72,7 @@ table, th, td {
   }
 
 table{
-    font-size: 10px;
+    font-size: 30px;
     font-family: sans-serif;
     font-weight: lighter;
 }
